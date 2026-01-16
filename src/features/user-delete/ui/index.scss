@@ -1,0 +1,96 @@
+.menu__overlay {
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background: var(--color-bg-secondary-84);
+
+  z-index: 9999;
+}
+
+.menu__wrapper {
+  padding: 14.4rem 0rem 9.6rem;
+  margin: 0;
+
+  width: 100%;
+  height: fit-content;
+
+  background: var(--color-bg-primary);
+  border-radius: 7.2rem 7.2rem 0rem 0rem;
+
+  transform: translate(0% 0%);
+
+  &-close {
+    top: 2.4rem;
+    left: 50%;
+    translate: -50% 0%;
+
+    width: 128rem;
+    max-width: 128rem;
+    min-width: 128rem;
+
+    &_button {
+      width: 6rem;
+      height: 6rem;
+      max-width: 6rem;
+      max-height: 6rem;
+      min-width: 6rem;
+      min-height: 6rem;
+
+      background: var(--color-bg-secondary);
+      border-radius: 1.2rem;
+    }
+  }
+}
+
+.form__wrapper {
+  padding: 0;
+  margin: 0;
+
+  width: fit-content;
+
+  gap: 9.6rem;
+
+  &-grid {
+    width: fit-content;
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.6rem;
+  }
+
+  &-submit,
+  &-delete {
+    width: 128rem;
+    max-width: 128rem;
+    min-width: 128rem;
+    height: 7.2rem;
+
+    &_button {
+      padding: 0rem 2.4rem;
+      margin: 0;
+
+      width: fit-content;
+      height: 7.2rem;
+
+      color: var(--color-bg-secondary);
+      font-weight: var(--font-weight-black);
+      text-align: center;
+      text-transform: uppercase;
+      border-radius: 1.2rem;
+    }
+  }
+
+  &-submit {
+    &_button {
+      background: var(--color-primary);
+    }
+  }
+
+  &-delete {
+    &_button {
+      background: var(--color-error);
+    }
+  }
+}

@@ -1,0 +1,199 @@
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Book.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Black.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-family: "Gotham", system-ui, sans-serif;
+
+  // Font Weights
+  --font-weight-book: 400;
+  --font-weight-medium: 500;
+  --font-weight-black: 700;
+
+  // Primary colors
+  --color-bg-primary: rgba(20, 20, 20, 1);
+  --color-bg-secondary: rgba(42, 42, 42, 1);
+  --color-bg-primary-84: rgba(20, 20, 20, 0.84);
+  --color-bg-secondary-84: rgba(42, 42, 42, 0.84);
+
+  // Accent colors
+  --color-primary: rgba(253, 186, 47, 1);
+  --color-primary-84: rgba(253, 186, 47, 0.84);
+  --color-primary-60: rgba(253, 186, 47, 0.6);
+
+  // Semantic colors
+  --color-success: rgba(0, 255, 136, 1);
+  --color-error: rgba(255, 0, 61, 1);
+
+  // Neutral colors
+  --color-text: rgba(255, 255, 255, 1);
+  --color-text-84: rgba(255, 255, 255, 0.84);
+  --color-text-60: rgba(255, 255, 255, 0.6);
+  --color-text-24: rgba(255, 255, 255, 0.24);
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+::-moz-selection {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+// Typography
+.XL {
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+  letter-spacing: calc(0.8em / 100);
+}
+
+.Large {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  letter-spacing: calc(0.8em / 100);
+}
+
+.Medium {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: calc(0.4em / 100);
+}
+
+.Small {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: calc(0.4em / 100);
+}
+
+.XS {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  letter-spacing: calc(0.4em / 100);
+}
+
+// Positions
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+// Display
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+// Global
+*,
+*::before,
+*::after,
+body,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  position: relative;
+
+  font-family: var(--font-family);
+  font-size: 10px;
+  font-kerning: none;
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0, "clig" 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: var(--color-bg-primary);
+
+  overflow-x: hidden;
+  translate: transform(0% 0%);
+}
+
+#react-app {
+  padding-bottom: 14.4rem;
+
+  @media (max-width: 1320px) {
+    display: none;
+  }
+}

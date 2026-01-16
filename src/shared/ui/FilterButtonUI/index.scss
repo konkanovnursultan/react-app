@@ -1,0 +1,22 @@
+.filter__wrapper {
+  padding: 0rem 2.4rem 0rem 0.4rem;
+
+  width: fit-content;
+  height: 100%;
+
+  gap: 0.4rem;
+
+  background: var(--color-primary);
+  border-radius: 3.6rem;
+
+  &-icon {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+
+  span {
+    color: var(--color-bg-secondary);
+    font-weight: var(--font-weight-black);
+    text-align: left;
+  }
+}

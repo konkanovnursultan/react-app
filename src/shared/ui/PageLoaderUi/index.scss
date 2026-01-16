@@ -1,0 +1,31 @@
+.page__loader {
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+
+  width: 100vw;
+  height: 100vh;
+
+  background: var(--color-bg-primary-84);
+  backdrop-filter: blur(0.8rem);
+
+  inset: 0;
+  z-index: 999;
+
+  &-spinner {
+    width: 6rem;
+    height: 6rem;
+
+    border: 1.2rem solid var(--color-primary);
+    border-left-color: transparent;
+    border-radius: 50%;
+
+    animation: spin 0.9s linear infinite;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

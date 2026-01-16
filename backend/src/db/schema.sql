@@ -1,0 +1,18 @@
+CREATE TABLE IF NOT EXISTS users (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL,
+  surname TEXT NOT NULL,
+  email TEXT NOT NULL UNIQUE,
+  skills TEXT NOT NULL,
+  created_at TEXT NOT NULL DEFAULT (datetime('now'))
+);
+
+CREATE TRIGGER IF NOT EXISTS limit_users
+BEFORE INSERT ON users
+BEGIN
+  SELECT
+    CASE
+      WHEN (SELECT COUNT(*) FROM users) >= 50
+      THEN RAISE(ABORT, 'User limit reached')
+    END;
+END;

@@ -1,0 +1,69 @@
+.header {
+  padding: 0.8rem;
+  margin: 3.6rem 0rem 0rem;
+
+  width: 128rem;
+  height: 7.2rem;
+
+  background: var(--color-bg-secondary);
+  border-radius: 2.4rem;
+
+  &__navigation {
+    width: fit-content;
+    height: 100%;
+
+    gap: 0.8rem;
+
+    &-link {
+      padding: 0rem 3.6rem;
+
+      width: fit-content;
+      height: 100%;
+
+      background: var(--color-bg-secondary);
+      border-radius: 1.6rem;
+
+      color: var(--color-text-60);
+      font-weight: var(--font-weight-black);
+      text-align: center;
+      text-transform: uppercase;
+
+      transition: all 0.12s ease-in-out;
+
+      &:hover {
+        color: var(--color-text);
+      }
+
+      &--active {
+        background: var(--color-primary);
+
+        color: var(--color-bg-secondary);
+
+        &:hover {
+          background: var(--color-primary);
+
+          color: var(--color-bg-secondary);
+        }
+      }
+    }
+  }
+
+  &__figma {
+    width: 5.6rem;
+    min-width: 5.6rem;
+    height: 100%;
+
+    background: var(--color-bg-secondary);
+    border-radius: 1.6rem;
+
+    opacity: 0.6;
+
+    transition: all 0.12s ease-in-out;
+
+    &:hover {
+      background: var(--color-bg-primary);
+
+      opacity: 1;
+    }
+  }
+}

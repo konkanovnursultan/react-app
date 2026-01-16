@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    /* Environment */
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    /* Node */
+    "types": ["node"],
+
+    /* Project structure */
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    /* Output */
+    "sourceMap": true,
+    "declaration": false,
+
+    /* Type safety */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    /* Build */
+    "isolatedModules": true,
+    "skipLibCheck": true
+  },
+  "include": ["src"]
+}
