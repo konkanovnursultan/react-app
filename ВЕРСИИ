@@ -1,0 +1,16 @@
+Добрый день! Для запуска проекта сначала зайдите в папку react-app/backend и запустите его через команды:
+
+pnpm install
+pnpm approve-builds
+pnpm rebuild better-sqlite3
+pnpm dev
+
+Версии: 
+
+- Node.js >= 18 (Рекомендую 20 LTS)
+- pnpm >= 9
+
+Запуск проекта react-app: 
+
+pnpm install
+pnpm dev
